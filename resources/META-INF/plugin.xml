@@ -1,0 +1,27 @@
+<idea-plugin url="https://github.com/andrewbents/switch-component-files-plugin">
+  <id>andrewbents</id>
+  <name>Switch Component files</name>
+  <version>1.0</version>
+  <vendor email="andreybenz@gmail.com" url="https://github.com/andrewbents/switch-component-files-plugin">Andrew Bents</vendor>
+
+  <description><![CDATA[
+     Switch between component's code, styles and template
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <actions>
+    <action id="switch-component-files" class="SwitchComponentFileAction"
+            text="Switch component file"
+            description="Switch between component&#39;s code, styles and template">
+      <keyboard-shortcut keymap="$default" first-keystroke="alt S"/>
+    </action>
+  </actions>
+
+</idea-plugin>
